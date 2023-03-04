@@ -1,6 +1,6 @@
   import 'package:flutter/cupertino.dart';
   import 'package:flutter/material.dart';
-  impor'Result_scanar.dart't';
+  import'Result_scanar.dart';
 
   class ScanarBage extends StatelessWidget {
     static const String screenRoute = 'Scanar_bage';
