@@ -65,7 +65,7 @@ class LoginPlants extends StatelessWidget {
                       Column(
                         children: [
                           ElevatedButton(
-                            child: Text(' Sgin Up '),
+                            child: Text(' Sign Up '),
                             onPressed: () {
                               Navigator.push(
                                 context,
