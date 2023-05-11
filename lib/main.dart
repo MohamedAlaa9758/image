@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../image_pro/lib/Result_scanar.dart';
-
-import'../../image_pro/lib/Scanar_bage.dart';
+import 'package:image_processing/Loginpage.dart';
+import 'package:image_processing/SginUp.dart';
+import 'Login_Plants.dart';
 import 'Result_scanar.dart';
 import 'Scanar_bage.dart';
 
@@ -14,10 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      initialRoute: ScanarBage.screenRoute,
+      initialRoute: LoginPlants.loginPlants,
       routes: {
-          ScanarBage.screenRoute:(context) =>ScanarBage(),
+        LoginPlants.loginPlants:(context) =>LoginPlants(),
+          ScanarPage.screenRoute:(context) =>ScanarPage(),
         ScanarResult.screenRoute:(context) =>ScanarResult(),
+        LoginPage.loginPage:(context) => LoginPage(),
+        SginupPage.sginupPage:(context) => SginupPage(),
 
 
       },
