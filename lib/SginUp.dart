@@ -143,7 +143,7 @@ class SginupPage extends StatelessWidget {
                                   minWidth: double.infinity,
                                   height: 50,
                                   onPressed: () {
-                                    print("You are Sgin Up");
+                                    print("You are Sign Up");
                                     Navigator.pushNamed(
                                       context,
                                      LoginPage.loginPage,
@@ -153,7 +153,7 @@ class SginupPage extends StatelessWidget {
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(40)),
                                   child: Text(
-                                    " Sgin Up ",
+                                    " Sign Up ",
                                     style: TextStyle(
                                       fontWeight: FontWeight.w600,
                                       fontSize: 16,
