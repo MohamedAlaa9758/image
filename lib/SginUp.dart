@@ -71,7 +71,7 @@ class SginupPage extends StatelessWidget {
                                       labelText: ' Full name ',
                                       fillColor: Colors.white,
                                       filled: true,
-                                      suffixIcon: Icon(
+                                      prefixIcon: Icon(
                                         Icons.account_circle,
                                         color: Colors.black,
                                       ),
@@ -93,7 +93,7 @@ class SginupPage extends StatelessWidget {
                                       labelText: 'Email Address',
                                       fillColor: Colors.white,
                                       filled: true,
-                                      suffixIcon: Icon(
+                                      prefixIcon: Icon(
                                         Icons.email,
                                         color: Colors.black,
                                       ),
@@ -115,7 +115,7 @@ class SginupPage extends StatelessWidget {
                                       labelText: 'PassWord',
                                       fillColor: Colors.white,
                                       filled: true,
-                                      suffixIcon: Icon(
+                                      prefixIcon: Icon(
                                         Icons.lock,
                                         color: Colors.black,
                                       ),
@@ -169,25 +169,35 @@ class SginupPage extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  "Already have an account? ",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                                Text(
-                                  "  Log in  ",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18,
-                                    color: Colors.white,
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => LoginPage(),
+                                      ),
+                                    );
+                                  },
+                                  child: new Text(
+                                    "Already have an account??",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 20,
+                                    ),
                                   ),
                                 ),
                                 SizedBox(
                                   height: 30,
                                 ),
+                                Text(
+                                  " OR Login With ",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18,
+                                    color: Colors.white,
+                                  ),
+                                ),
+
                               ],
                             ),
                             Padding(

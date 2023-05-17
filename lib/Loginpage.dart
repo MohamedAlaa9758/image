@@ -1,6 +1,7 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:image_processing/Login_Plants.dart';
+import 'Forget_password.dart';
 import 'Scanar_bage.dart';
 import 'SginUp.dart';
 
@@ -78,7 +79,7 @@ class LoginPage extends StatelessWidget {
                                       labelText: 'Email Address',
                                       fillColor: Colors.white,
                                       filled: true,
-                                      suffixIcon: Icon(
+                                      prefixIcon: Icon(
                                         Icons.email,
                                         color: Colors.black,
                                       ),
@@ -100,8 +101,8 @@ class LoginPage extends StatelessWidget {
                                       labelText: 'PassWord',
                                       fillColor: Colors.white,
                                       filled: true,
-                                      suffixIcon: Icon(
-                                        Icons.lock,
+                                      prefixIcon: Icon(
+                                        Icons.remove_red_eye,
                                         color: Colors.black,
                                       ),
                                       border: OutlineInputBorder(),
@@ -154,20 +155,62 @@ class LoginPage extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
-                                  "Forgot Password? ",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.w600, fontSize: 18),
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => Forget_password(),
+                                      ),
+                                    );
+                                  },
+                                  child: new Text(
+                                    " Forget Password??",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 20,
+                                    ),
+                                  ),
                                 ),
-                                Text(
-                                  " Sign Up ",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.w600, fontSize: 20),
+
+                                new GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => Forget_password(),
+                                      ),
+                                    );
+                                  },
+                                  child: new Text(
+                                    " ",
+                                  ),
                                 ),
+
+                                //#################################################
                                 SizedBox(
-                                  height: 20,
+                                  height: 30,
                                 ),
-                              ],
+                                    Column(
+                                      children: [
+                                        SizedBox(
+                                          height: 20,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Text(
+                                              " Or Login With ",
+                                              style: TextStyle(
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.w500,
+                                                  color: Colors.white),
+                                            ),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+
                             )
                           ],
                         ),
