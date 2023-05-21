@@ -3,12 +3,8 @@ import 'package:flutter/material.dart';
 import 'Loginpage.dart';
 import 'SginUp.dart';
 
-
-
-
 class LoginPlants extends StatelessWidget {
   static const String loginPlants = 'Login_Plants';
-
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +61,7 @@ class LoginPlants extends StatelessWidget {
                       Column(
                         children: [
                           ElevatedButton(
-                            child: Text(' Sgin Up '),
+                            child: Text(' Sign Up '),
                             onPressed: () {
                               Navigator.push(
                                 context,
