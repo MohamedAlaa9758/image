@@ -209,23 +209,37 @@ class _SginupPageState extends State<SginupPage> {
                               SizedBox(
                                 height: 10,
                               ),
-                              GestureDetector(
-                                onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => LoginPage(),
-                                    ),
-                                  );
-                                },
-                                child: new Text(
+                              Row(
+                                children: [
+                                  Text(
                                   "Already have an account??",
                                   style: TextStyle(
                                     fontWeight: FontWeight.w600,
                                     fontSize: 20,
                                   ),
                                 ),
+                                  SizedBox(width: 5,),
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => LoginPage(),
+                                        ),
+                                      );
+                                    },
+                                    child: Text(
+                                      "Login",
+                                      style: TextStyle( fontWeight: FontWeight.w600,
+
+                                        color: Colors.blue[800],
+                                        fontSize: 20,
+                                      ),
+                                    ),
+                                  ),],
                               ),
+
+
                               SizedBox(
                                 height: 8,
                               ),

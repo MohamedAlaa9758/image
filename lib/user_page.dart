@@ -129,14 +129,17 @@ class _UserPageState extends State<UserPage> {
                               Padding(
                                 padding: const EdgeInsets.all(10.0),
                                 child: CircleAvatar(
+                                  radius: MediaQuery.of(context).size.width * 0.11,
                                   backgroundColor: Colors.white,
-                                  radius: 40.0,
-                                  child: file!=null
-                                      ?Image.file(file,fit: BoxFit.fill,
-                                  ):Icon(Icons.person,
+                                  backgroundImage: file == null ? null :FileImage(File(file.path)),
+                                  // child: file!=null
+                                  //     ?Image.file(file,fit: BoxFit.fill,
+                                  // ):
+                                  child: file == null ?
+                                  Icon(Icons.person,
                                   size: 45.0,
                                     color: Colors.black,
-                                  ),
+                                  ):null,
                                   // backgroundImage: AssetImage('image/person-icon.png'),
                                   // backgroundColor: Colors.black,
 
