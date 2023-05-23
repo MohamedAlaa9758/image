@@ -44,7 +44,6 @@ class _LoginPageState extends State<LoginPage> {
                   ),
 
                   //#########################
-
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 10.0,sigmaY: 10.0,),
                     child: Padding(

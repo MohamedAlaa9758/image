@@ -95,7 +95,6 @@ class _ChangePassState extends State<ChangePass> {
                               color: Colors.black,
                             ),
                           ),
-
                         ],
                       ),
                     ),

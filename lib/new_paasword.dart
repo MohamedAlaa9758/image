@@ -22,7 +22,6 @@ class NewPassword extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-
         //#########################
         child: BackdropFilter(
           filter: ImageFilter.blur(

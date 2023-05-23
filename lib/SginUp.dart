@@ -10,7 +10,6 @@ class SginupPage extends StatefulWidget {
   @override
   State<SginupPage> createState() => _SginupPageState();
 }
-
 class _SginupPageState extends State<SginupPage> {
   GlobalKey<FormState> signKey =GlobalKey<FormState>();
 

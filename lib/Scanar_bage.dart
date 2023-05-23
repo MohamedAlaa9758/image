@@ -22,41 +22,7 @@ class ScanarPage extends StatefulWidget {
 class _ScanarPageState extends State<ScanarPage> {
   File imageFile;
   _showOption(BuildContext context){
-    // return
-    //     Container(
-    //
-    //       width: 270,
-    //       height: 270,
-    //       decoration: BoxDecoration(
-    //         borderRadius: BorderRadiusDirectional.circular(20.0),
-    //         color: Colors.blueGrey,
-    //       ),
-    //       child: (imageFile == null)?_ScanarPageState():Image.file(imageFile,fit: BoxFit.cover,),
-    //
-    //           // ?Image.file(imageFile,width: 200, height: 200,):
-    //       // Center(
-    //       //   child: Text(
-    //       //     ' Upload image to continue ',
-    //       //     style: TextStyle(
-    //       //       fontSize: 20.0,
-    //       //     ),
-    //       //   ),
-    //       //   // Text(
-    //       //   //   'Scan your plant to know the plant has disease or not? ',
-    //       //   //   style: TextStyle(
-    //       //   //     fontSize: 20.0,
-    //       //   //     fontWeight: FontWeight.bold,
-    //       //   //     color: Colors.black,
-    //       //   //   ),
-    //       //   // ),
-    //       // ),
-    //       // Text(
-    //       //     ' Upload image to continue ',
-    //       //   style: TextStyle(
-    //       //     fontSize: 20.0,
-    //       //   ),
-    //       // ),
-    // );
+
 
   return showDialog(context: context,
       builder: (context)=>

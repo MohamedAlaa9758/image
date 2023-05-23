@@ -28,7 +28,6 @@ class LoginPlants extends StatelessWidget {
                   ),
 
                   //#########################
-
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.center,

@@ -14,9 +14,6 @@ class AboutPage extends StatelessWidget {
         backgroundColor: Colors.green,
         elevation: 0.0,
         titleSpacing: 0.0,
-        // backgroundColor: Colors.white24,
-        // automaticallyImplyLeading: false,
-
         title: Text(
           'About',
           style: TextStyle(

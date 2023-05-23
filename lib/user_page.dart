@@ -335,75 +335,7 @@ class _UserPageState extends State<UserPage> {
                         ],
                       ),
                     ),
-                    // SizedBox(
-                    //   height: 20.0,
-                    // ),
-                    // Container(
-                    //   decoration: BoxDecoration(
-                    //     borderRadius: BorderRadius.circular(15.0),
-                    //     color: Colors.green,
-                    //   ),
-                    //   height: 50.0,
-                    //   child: TextButton(
-                    //     onPressed: () {
-                    //       Navigator.pushNamed(
-                    //           context,
-                    //           ScanarPage.screenRoute,
-                    //       );
-                    //     },
-                    //     child: Row(
-                    //       mainAxisAlignment: MainAxisAlignment.center,
-                    //       mainAxisSize: MainAxisSize.min,
-                    //       children: [
-                    //         Text(
-                    //           'Scaner',
-                    //           style: TextStyle(
-                    //             color: Colors.white,
-                    //             fontSize: 30.0,
-                    //           ),
-                    //         ),
-                    //         SizedBox(
-                    //           width: 30.0,
-                    //         ),
-                    //         Icon(
-                    //           Icons.document_scanner_sharp,
-                    //           color: Colors.white,
-                    //         ),
-                    //       ],
-                    //     ),
-                    //   ),
-                    // ),
-                    // SizedBox(
-                    //   height: 30.0,
-                    // ),
-                    // Container(
-                    //   decoration: BoxDecoration(
-                    //     borderRadius: BorderRadius.circular(10.0),
-                    //     color: Colors.red,
-                    //   ),
-                    //   height: 40.0,
-                    //   child: TextButton(
-                    //     onPressed: () {
-                    //       Navigator.pushNamed(
-                    //           context,
-                    //         LoginPlants.loginPlants,
-                    //       );
-                    //     },
-                    //     child: Row(
-                    //       mainAxisAlignment: MainAxisAlignment.center,
-                    //       mainAxisSize: MainAxisSize.min,
-                    //       children: [
-                    //         Text(
-                    //           'Sign out',
-                    //           style: TextStyle(
-                    //             color: Colors.white,
-                    //             fontSize: 17.0,
-                    //           ),
-                    //         ),
-                    //       ],
-                    //     ),
-                    //   ),
-                    // ),
+
 
                   ],
                 ),
